@@ -40,6 +40,51 @@
             <main>
               <h3 class="fs-3">Richiesta preventivo</h3>
               <p class="fs-6">Compila il form per richiedere un preventivo per i nostri servizi di sviluppo.</p>
+
+              <form class="g-3">
+                    <div class="col py-2">
+                        <label for="name" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="name" required> 
+                    </div>
+
+                    <div class="col py-2">
+                        <label for="surname" class="form-label">Cognome</label>
+                        <input type="text" class="form-control" id="surname" required>
+                    </div>
+
+                    <div class="col py-2">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                
+                    <div class="col py-2"> 
+                        <label for="work" class="form-label">Tipo di lavoro</label>
+                        <select id="provincia" class="form-select">
+                            <option value="SELEZIONA">Seleziona il tipo di lavoro</option>
+                            <option value="BD">Backend Development</option>
+                            <option value="FD">Frontend Development</option>
+                            <option value="PA">Project Analysis</option>
+                        </select>
+                    </div>
+
+                    <div class="col py-2">
+                        <label for="exampleFormControlTextarea1" class="form-label">Textarea con Bootstrap 5</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+
+                    <div class="col py-2">
+                        <label for="promo" class="form-label">Codice promozionale (opzionale)</label>
+                        <input type="promo" class="form-control" id="promo">
+                    </div>
+
+                    <div class="col py-2">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1"> Accetto la Privacy Policy</label>
+                    </div>
+
+                    <button type="submit" class="d-flex btn btn-primary my-4 ms-5">Calcola preventivo</button>
+                </form>
+
             </main>
           </div>
 
