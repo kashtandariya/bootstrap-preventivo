@@ -59,7 +59,7 @@
                 
                     <div class="col py-2"> 
                         <label for="work" class="form-label">Tipo di lavoro</label>
-                        <select id="provincia" class="form-select">
+                        <select id="work" class="form-select">
                             <option value="SELEZIONA">Seleziona il tipo di lavoro</option>
                             <option value="BD">Backend Development</option>
                             <option value="FD">Frontend Development</option>
@@ -68,8 +68,8 @@
                     </div>
 
                     <div class="col py-2">
-                        <label for="exampleFormControlTextarea1" class="form-label">Textarea con Bootstrap 5</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <label for="numeroOre" class="form-label">Textarea con Bootstrap 5</label>
+                        <textarea class="form-control" id="numeroOre" rows="3"></textarea>
                     </div>
 
                     <div class="col py-2">
@@ -79,11 +79,11 @@
 
                     <div class="col py-2">
                         <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1"> Accetto la Privacy Policy</label>
+                        <label class="form-check-label" for="exampleCheck1">Accetto la Privacy Policy</label>
                     </div>
 
                     <div class="col py-3 d-flex justify-content-md-around align-items-center flex-column flex-md-row">
-                      <button type="submit" class="btn btn-primary my-4 ms-md-5">Calcola preventivo</button>
+                      <button id="cacolaPreventivo" type="submit" class="btn btn-primary my-4 ms-md-5">Calcola preventivo</button> 
                       <span id="Result" class="ms-md-3" style="font-weight: bold;">Prezzo finale <br>€</span>
                     </div>                  
 
@@ -96,7 +96,7 @@
             <!-- Contenuto dell'aside -->
             <aside>
                 <div class="card w-100%">
-                    <img src="images/download.jpg" class="card-img-top fixed-size-image" >
+                    <img src="images/download.jpg" class="card-img-top fixed-size-image" alt="girl working on a pc">
                     <div class="card-header">
                         <h3 class="fs-6">I nostri contatti</h3>
                         <p class="fs-6 d-inline d-md-block">Se hai bisogno di aiuto puoi contattarci:</p>
@@ -119,6 +119,6 @@
         <h5 class="bg-dark text-center text-light p-4 m-0 small">&copy; 2024 - Tutti i diritti riservati</h5>
     </footer>
 
-    <script src="js/app.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
