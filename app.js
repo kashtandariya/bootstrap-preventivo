@@ -1,5 +1,6 @@
 // Quando l’utente fa click sul bottone submit del form, il sito deve calcolare l’ammontare del preventivo per le ore di lavoro richieste.
 //quindi aggiungi addEventListener però non "click" perché l'evento è un submit di un form!!
+//in realtà puoi anche usare click ma devi riferirti al form!
 
 // Il prezzo finale è dato dal numero di ore * prezzo orario.
 // sviluppo backend il prezzo orario è di 20.50€/l’ora
@@ -16,3 +17,32 @@
 // Il risultato del calcolo del prezzo finale deve essere visualizzato in “forma umana” (con 2 decimali e il simbolo dell’euro)
 // quindi formatta di conseguenza
 
+
+
+//inizio definendo variabili e arrays che andrò a utilizzare nella funzione
+// Object dei prezzi orari per i diversi tipi di lavoro
+  const prezziOrari = {
+    BD: 20.50,
+    FD: 15.30,
+    PA: 33.60
+};
+
+// Array dei codici promozionali validi
+ const codiciValidi = ["YHDNU32", "JANJC63", "PWKCN25", "SJDPO96", "POCIE24"];
+
+
+//proseguo controllando che quello che inserisce l'utente sia valido
+// Verifica se il numero di ore inserito è valido
+if (isNaN(numeroOre) || numeroOre <= 0) { //se non è un numero o è inferiore uguale a 0, alert!
+    alert("Inserisci un numero valido di ore");
+    console.log(numeroOre)
+}
+
+// Verifica se il tipo di lavoro inserito è valido
+if (!prezziOrari[work]) { //se non esiste un prezzo orario per il lavoro specificato, allora non hai inserito un lavoro, alert!
+    alert("Seleziona il tipo di lavoro");
+    console.log(prezziOrari)
+}
+
+
+   
