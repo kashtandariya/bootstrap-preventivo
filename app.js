@@ -41,8 +41,18 @@ if (isNaN(numeroOre) || numeroOre <= 0) { //se non è un numero o è inferiore u
 // Verifica se il tipo di lavoro inserito è valido
 if (!prezziOrari[work]) { //se non esiste un prezzo orario per il lavoro specificato, allora non hai inserito un lavoro, alert!
     alert("Seleziona il tipo di lavoro");
-    console.log(prezziOrari)
+    console.log(work)
 }
 
+// Proviamo a calcolare il prezzo senza sconto
+const prezzoSenzaSconto = prezziOrari[work] * numeroOre;
+console.log(prezzoSenzaSconto)
 
-   
+// Calcola il prezzo finale e applica lo sconto se necessario
+let prezzoFinale;
+if (codiciValidi.includes(codicePromozionale)) { //usiamo il metodo includes per controllare dentro all'array
+    prezzoFinale = prezzoSenzaSconto * 0.75; // Sconto del 25%
+} else {
+    alert("Il codice promozionale inserito non è valido");
+    prezzoFinale = prezzoSenzaSconto;
+}
