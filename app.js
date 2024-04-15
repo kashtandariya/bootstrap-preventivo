@@ -83,4 +83,5 @@ document.getElementById("calcolaPreventivo").addEventListener("click", function(
     event.preventDefault(); //questo serve per impedire il comportamento predefinito del pulsante (ricaricamento della pagina) che invece si azionerà solo quando io lo clicco (o l'utente in questo caso)
     //function(event) è una funzione anonima che si riferisce all'evento di click e per la quale utilizziamo poi il metodo preventDefault
     calcolaPreventivo() //alla fine richiamiamo la funzione cosicché venga eseguita solo quando l'utente clicca
+    document.getElementById("myForm").reset();
 });
